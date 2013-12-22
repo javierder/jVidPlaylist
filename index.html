@@ -1,0 +1,36 @@
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="jVidPlaylist.js"></script>
+
+	<script>
+		$(document).ready(function  () {
+
+			var videos = [
+			"http://www.youtube.com/watch?v=AhbBo-209go",
+			"http://www.youtube.com/watch?v=tPEE9ZwTmy0",
+			"https://vimeo.com/1749703",
+			"http://www.youtube.com/watch?v=2t5PuG372jA",
+			"https://vimeo.com/27221475"
+			];
+
+			$("#container").vidplaylist("init", videos, {
+
+				width:"500",
+				height:"300"
+			});
+
+
+
+		})
+	</script>
+</head>
+
+<body>
+
+	<div id="container">
+	</div>
+</body>
+</html>
